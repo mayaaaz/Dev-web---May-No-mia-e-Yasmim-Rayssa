@@ -1,0 +1,17 @@
+<h1>Lista de Vídeos</h1>
+<a href="/videos/cadastrar">Cadastrar Novo Vídeo</a>
+<hr>
+<div style="display: flex; flex-wrap: wrap;">
+    {{#each videos}}
+        <div style="border: 1px solid #ccc; margin: 10px; padding: 10px; width: 200px;">
+            <img src="{{this.thumbnail}}" alt="{{this.titulo}}" style="width: 100%;">
+            <h3>{{this.titulo}}</h3>
+            <p><strong>Criador:</strong> {{this.criador}}</p>
+            <p><strong>Visualizações:</strong> {{this.visualizacoes}}</p>
+            <p><strong>Curtidas:</strong> {{this.curtidas}}</p>
+            <p><strong>Hashtag:</strong> #{{this.hashtag}}</p>
+            <a href="{{this.url}}">Assistir Vídeo</a>
+        </div>
+    {{/each}}
+</div>
+<a href="/">Voltar para Home</a>
