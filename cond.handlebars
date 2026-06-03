@@ -1,0 +1,13 @@
+<h1>Teste de Condicionais</h1>
+
+{{#if logado}}
+    <p>Bem-vindo, usuário logado!</p>
+{{else}}
+    <p>Por favor, faça login para continuar.</p>
+{{/if}}
+
+{{#unless admin}}
+    <p>Aviso: Você não tem permissões de administrador.</p>
+{{/unless}}
+
+<a href="/">Voltar para Home</a>
